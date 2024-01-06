@@ -58,7 +58,7 @@ export default function Review() {
           className="w-full rounded-[1rem] bg-[#30293a] outline-none text-white p-[1rem] text-[12px] sm:text-[16px] sm:h-[10rem]"
         ></textarea>
         {message && (
-          <p className="text-[12px] sm:text-[14px] font-[500] text-red-500">
+          <p className="text-[10px] sm:text-[14px] font-[500] text-red-500">
             You must download an application first to leave a review!
           </p>
         )}
