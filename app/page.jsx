@@ -38,7 +38,7 @@ export default function Home() {
 
   if (windowWidth < 600) {
     return (
-      <Slide triggerOnce direction="left" duration={1000}>
+      <Slide triggerOnce direction="left" duration={500}>
         <div className="pb-[3rem]">
           {/* ============== Search Bar ============ */}
           <div
