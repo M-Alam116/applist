@@ -13,6 +13,7 @@ export default function Rating() {
         <div className="bg-[--primaryColor] w-full h-[0.7rem] rounded-full">
           <div className="bg-[--pulper] w-[90%] h-full rounded-full"></div>
         </div>
+        <h1 className="text-[20px] font-[600] text-white">90%</h1>
       </div>
       <div className="flex items-center gap-[20px]">
         <div className="flex items-center gap-[5px]">
@@ -22,6 +23,7 @@ export default function Rating() {
         <div className="bg-[--primaryColor] w-full h-[0.7rem] rounded-full">
           <div className="bg-[--pulper] w-[50%] h-full rounded-full"></div>
         </div>
+        <h1 className="text-[20px] font-[600] text-white">50%</h1>
       </div>
       <div className="flex items-center gap-[20px]">
         <div className="flex items-center gap-[5px]">
@@ -31,6 +33,7 @@ export default function Rating() {
         <div className="bg-[--primaryColor] w-full h-[0.7rem] rounded-full">
           <div className="bg-[--pulper] w-[30%] h-full rounded-full"></div>
         </div>
+        <h1 className="text-[20px] font-[600] text-white">30%</h1>
       </div>
       <div className="flex items-center gap-[20px]">
         <div className="flex items-center gap-[5px]">
@@ -40,6 +43,7 @@ export default function Rating() {
         <div className="bg-[--primaryColor] w-full h-[0.7rem] rounded-full">
           <div className="bg-[--pulper] w-[10%] h-full rounded-full"></div>
         </div>
+        <h1 className="text-[20px] font-[600] text-white">10%</h1>
       </div>
       <div className="flex items-center gap-[20px]">
         <div className="flex items-center gap-[5px]">
@@ -47,8 +51,9 @@ export default function Rating() {
           <h1 className="text-[18px] font-[700] text-white opacity-60">1</h1>
         </div>
         <div className="bg-[--primaryColor] w-full h-[0.7rem] rounded-full">
-          <div className="bg-[--pulper] w-[5%] h-full rounded-full"></div>
+          <div className="bg-[--pulper] w-[0%] h-full rounded-full"></div>
         </div>
+        <h1 className="text-[20px] font-[600] text-white">0%</h1>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ export const appsData = [
     description:
       "Clash of Clans is a real-time strategy game that combines many complex elements, such as building, defending, and deploying squads. Each detail makes an immense contribution to this game and gradually creates new gameplay, giving players a lot of amusement and stimulation even if they become late-game players. Above all, clans are the most prominent content, where everyone is hilarious and create many great moments together on the vast battlefields.",
     image: "/images/game1.png",
-    bigImage: "/images/bg1.png",
+    bigImage: "/images/bg1.jpg",
     type: "Action",
     version: "15.547.8",
     size: "325 M",
@@ -16,7 +16,7 @@ export const appsData = [
     description:
       "With lots of levels and beautiful background music, this rhythm game has something for everyone. You must touch the screen to progress. Geometry Dash APK's music is fantastic, and it's a wonderful distraction from the busy world. You'll enjoy the game's multiple modes, each of which features a different level. There is a wide variety of characters and music tracks in Geometry Dash Mod Apk, and you can pick from different game types depending on your mood.",
     image: "/images/game2.png",
-    bigImage: "/images/bg2.png",
+    bigImage: "/images/bg2.jpg",
     type: "Arcade",
     version: "v2.2",
     size: "75 M",
@@ -27,18 +27,18 @@ export const appsData = [
     description:
       "What started as a shot-in-the-dark tweet is now a twisted collaboration between Molly Moonn, Airdorf Games (FAITH: The Unholy Trinity), Jesse Cox (Monster Prom) and Torple Dook (Hand of Doom, Chip's Tips)!",
     image: "/images/game3.png",
-    bigImage: "/images/bg3.png",
+    bigImage: "/images/bg3.jpg",
     type: "Horror",
     version: "1.0.1",
     size: "293 MB",
   },
   {
     id: 4,
-    name: "EXCUSE ME SIR",
+    name: "Brotato MOD",
     description:
       "The potato guy’s spacecraft crashed on a strange planet due to technical problems. This was an emergency that he had never encountered. After collecting data about the planet, it can be seen that it is covered with a hungry monster. These aliens are not friendly and are always searching for moving things. But they were wrong because this could be a considerable threat. You will take out your weapon and destroy all of them. This is a routine job that our potato warriors still do regularly. Scare them with the destruction you bring to this planet.",
     image: "/images/game4.png",
-    bigImage: "/images/bg4.png",
+    bigImage: "/images/bg4.jpg",
     type: "Action",
     version: "1.3.133",
     size: "180 MB",
