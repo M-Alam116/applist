@@ -15,19 +15,19 @@ export default function Review() {
 
   return (
     <div className="flex flex-col gap-[2rem]">
-      <h1 className="text-[20px] font-[600] text-white opacity-60 uppercase tracking-widest">
+      <h1 className="text-[16px] sm:text-[20px] font-[600] text-white opacity-60 uppercase tracking-widest">
         user reviews
       </h1>
       <div className="flex items-start gap-[1rem]">
         <MdAccountCircle className="text-[--pulper] w-[50px] h-[50px]" />
         <div className="flex flex-col gap-[5px]">
-          <h1 className="text-[20px] font-[600] text-white">
+          <h1 className="text-[16px] sm:text-[20px] font-[600] text-white">
             Nulls Clash v15.547.8
           </h1>
-          <h2 className="text-[16px] font-[600] text-[--pulper] tracking-widest uppercase">
+          <h2 className="text-[14px] sm:text-[16px] font-[600] text-[--pulper] tracking-widest uppercase">
             sat, 28 mar 2023
           </h2>
-          <p className="text-[16px] font-[600] text-white opacity-60">
+          <p className="text-[14px] sm:text-[16px] font-[600] text-white opacity-60">
             Hi, I think its working very slow.
           </p>
         </div>
@@ -36,33 +36,33 @@ export default function Review() {
       <div className="flex items-start gap-[1rem]">
         <MdAccountCircle className="text-[--pulper] w-[50px] h-[50px]" />
         <div className="flex flex-col gap-[5px]">
-          <h1 className="text-[20px] font-[600] text-white">
+          <h1 className="text-[16px] sm:text-[20px] font-[600] text-white">
             Nulls Clash v15.547.8
           </h1>
-          <h2 className="text-[16px] font-[600] text-[--pulper] tracking-widest uppercase">
+          <h2 className="text-[14px] sm:text-[16px] font-[600] text-[--pulper] tracking-widest uppercase">
             Fri, 07 Mar 2023
           </h2>
-          <p className="text-[16px] font-[600] text-white opacity-60">
+          <p className="text-[14px] sm:text-[16px] font-[600] text-white opacity-60">
             Worked as promised literally..
           </p>
         </div>
       </div>
 
       <div className="flex flex-col gap-[1rem] mt-[2rem]">
-        <h1 className="text-[20px] font-[600] text-white opacity-60 uppercase tracking-widest">
+        <h1 className="text-[16px] sm:text-[20px] font-[600] text-white opacity-60 uppercase tracking-widest">
           leave a review
         </h1>
         <textarea
           rows="7"
-          className="w-full rounded-[1rem] bg-[#30293a] outline-none text-white p-[1rem]"
+          className="w-full rounded-[1rem] bg-[#30293a] outline-none text-white p-[1rem] text-[14px] sm:text-[16px]"
         ></textarea>
         {message && (
-          <p className="text-[14px] font-[500] text-red-500">
+          <p className="text-[12px] sm:text-[14px] font-[500] text-red-500">
             You must download an application first to leave a review!
           </p>
         )}
         <button
-          className="text-[14px] font-[700] text-white bg-[--pulper] py-[10px] px-[20px] rounded-[7px] uppercase w-full sm:w-fit"
+          className="text-[12px] sm:text-[14px] font-[700] text-white bg-[--pulper] py-[10px] px-[20px] rounded-[7px] uppercase w-full sm:w-fit"
           onClick={handleMessage}
         >
           add review

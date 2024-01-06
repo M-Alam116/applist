@@ -19,11 +19,23 @@ export default function Home() {
   return (
     <div className="pb-[3rem]">
       {/* ============== Search Bar ============ */}
-      <div className="bg-[--secondaryColor] w-full flex flex-col items-center py-[2rem] gap-[5px] mb-[2rem]">
+      <div
+        className="w-full flex flex-col items-center py-[2rem] gap-[10px] mb-[2rem] tracking-widest"
+        style={{
+          background:
+            "linear-gradient(90deg,#1b121d 0,#120f2f 50%,#1b121d 100%)",
+        }}
+      >
         <div className="">
-          <Image src="/images/logo.png" width={100} height={50} alt="logo" />
+          <Image
+            src="/images/logo.png"
+            width={100}
+            height={50}
+            alt="logo"
+            className="w-[80px] sm:w-[100px] h-[40px] sm:h-[50px]"
+          />
         </div>
-        <h1 className="text-[--primaryColor] text-[32px] font-[900]">
+        <h1 className="text-white text-[24px] sm:text-[32px] font-[900]">
           UFO TWERK
         </h1>
         <div className="flex items-center gap-[1rem] bg-[--primaryColor] rounded-full py-[1rem] px-[2rem]">
@@ -33,13 +45,13 @@ export default function Home() {
             placeholder="Search for apps..."
             value={searchQuery}
             onChange={handleSearchChange}
-            className="bg-transparent h-full outline-none border-none text-white placeholder:text-[--pulper]"
+            className="bg-transparent h-full outline-none border-none text-white placeholder:text-[--pulper] text-[14px] sm:text-[16px]"
           />
         </div>
       </div>
 
       {/* ============= apps list ================ */}
-      <div className="container flex flex-wrap justify-center gap-[1.5rem]">
+      <div className="flex flex-wrap gap-[1.5rem] px-[20px]">
         {filteredApps.map((data) => (
           <Card key={data.id} data={data} />
         ))}

@@ -40,23 +40,33 @@ export default function AppDetailsPage({ params }) {
           <RxCross2 className="text-[24px] text-white font-[900]" />
         </div>
       </Link>
-      <div className="px-[20px] flex flex-col gap-[3rem] py-[3rem] bg-[--secondaryColor] w-full rounded-t-[2rem]">
+      <div
+        className="px-[20px] flex flex-col gap-[3rem] py-[3rem] w-full rounded-t-[2rem]"
+        style={{
+          background:
+            "linear-gradient(90deg,#1b121d 0,#120f2f 50%,#1b121d 100%)",
+        }}
+      >
         <div className="flex flex-col gap-[10px]">
-          <h1 className="text-[28px] font-[700] text-white">{data.name}</h1>
-          <p className="text-[16px] font-[500] text-white opacity-60">
+          <h1 className="text-[24px] sm:text-[28px] font-[700] text-white">
+            {data.name}
+          </h1>
+          <p className="text-[14px] sm:text-[16px] font-[500] text-white opacity-60">
             {data.description}
           </p>
         </div>
 
-        <div className="flex justify-between items-center flex-wrap gap-[2rem]">
+        <div className="flex justify-between items-center gap-[2rem]">
           <div className="flex items-center gap-[1rem]">
             <Image src="/images/applogo.jpg" width={70} height={70} alt="" />
             <div className="flex flex-col gap-[5px]">
-              <h2 className="text-[14px] font-[500] text-[--pulper] uppercase">
+              <h2 className="text-[12px] sm:text-[14px] font-[500] text-[--pulper] uppercase">
                 mobile edition
               </h2>
-              <h1 className="text-[18px] font-[600] text-white">{data.name}</h1>
-              <h2 className="text-[14px] font-[500] text-white opacity-60 uppercase">
+              <h1 className="text-[14px] sm:text-[16px] font-[600] text-white">
+                {data.name}
+              </h1>
+              <h2 className="text-[12px] sm:text-[14px] font-[500] text-white opacity-60 uppercase">
                 android & ios
               </h2>
             </div>
@@ -65,7 +75,7 @@ export default function AppDetailsPage({ params }) {
             <Loader />
           ) : (
             <button
-              className="flex mx-auto sm:mx-0 text-[14px] font-[700] text-white uppercase bg-[--pulper] p-[15px] rounded-full w-fit"
+              className="flex mx-auto sm:mx-0 text-[12px] sm:text-[14px] font-[700] text-white uppercase bg-[--pulper] p-[15px] rounded-full w-fit"
               onClick={handleInstallClick}
             >
               install
