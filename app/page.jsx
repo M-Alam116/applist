@@ -1,8 +1,21 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 import { FaSearch } from "react-icons/fa";
 import Card from "./components/Card";
 import { appsData } from "./data/data";
 export default function Home() {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const filteredApps = appsData.filter((data) =>
+    data.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
   return (
     <div className="pb-[3rem]">
       {/* ============== Search Bar ============ */}
@@ -18,6 +31,8 @@ export default function Home() {
           <input
             type="text"
             placeholder="Search for apps..."
+            value={searchQuery}
+            onChange={handleSearchChange}
             className="bg-transparent h-full outline-none border-none text-white placeholder:text-[--pulper]"
           />
         </div>
@@ -25,7 +40,7 @@ export default function Home() {
 
       {/* ============= apps list ================ */}
       <div className="container flex flex-wrap justify-center gap-[1.5rem]">
-        {appsData.map((data) => (
+        {filteredApps.map((data) => (
           <Card key={data.id} data={data} />
         ))}
       </div>
