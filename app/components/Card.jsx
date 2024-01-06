@@ -10,20 +10,20 @@ export default function Card({ data }) {
       className="w-full sm:max-w-[300px] flex justify-between"
     >
       <div
-        className="w-full sm:max-w-[300px] flex flex-col justify-between rounded-[1rem] p-[1rem] group cursor-pointer"
+        className="w-full sm:max-w-[300px] flex flex-col justify-between rounded-[1rem] pt-[1rem] group cursor-pointer"
         style={{
           background:
             "linear-gradient(90deg,#1b121d 0,#120f2f 50%,#1b121d 100%)",
         }}
       >
         <div className="">
-          <div className="flex items-center gap-[5px] mb-[5px]">
+          <div className="flex items-center gap-[5px] mb-[5px] pl-[1rem]">
             <span className="w-[8px] h-[8px] rounded-full bg-[--pulper]"></span>
             <p className="uppercase text-[10px] sm:text-[14px] font-[400] text-[--pulper] tracking-wide">
               updated
             </p>
           </div>
-          <div className="flex flex-col items-center gap-[1rem]">
+          <div className="flex flex-col items-center gap-[1rem] px-[1rem]">
             <div className="relative flex justify-center">
               <Image
                 src={image}
@@ -44,7 +44,7 @@ export default function Card({ data }) {
             </p>
           </div>
         </div>
-        <div className="flex justify-between mt-[3rem]">
+        <div className="flex justify-between mt-[3rem] bg-[#201629] items-center p-[12px]">
           <div className="flex flex-col items-center gap-[5px]">
             <BsLightningChargeFill className="text-[--pulper] text-[20px]" />
             <p className="text-[8px] sm:text-[10px] font-[400] text-white">

@@ -48,25 +48,25 @@ export default function AppDetailsPage({ params }) {
         }}
       >
         <div className="flex flex-col gap-[10px]">
-          <h1 className="text-[24px] sm:text-[28px] font-[700] text-white">
+          <h1 className="text-[22px] sm:text-[26px] font-[700] text-white">
             {data.name}
           </h1>
-          <p className="text-[14px] sm:text-[16px] font-[500] text-white opacity-60">
+          <p className="text-[12px] sm:text-[15px] font-[500] text-white opacity-60">
             {data.description}
           </p>
         </div>
 
-        <div className="flex justify-between items-center gap-[2rem]">
+        <div className="flex justify-between items-center gap-[1.5rem]">
           <div className="flex items-center gap-[1rem]">
             <Image src="/images/applogo.jpg" width={70} height={70} alt="" />
             <div className="flex flex-col gap-[5px]">
-              <h2 className="text-[12px] sm:text-[14px] font-[500] text-[--pulper] uppercase">
+              <h2 className="text-[10px] sm:text-[14px] font-[500] text-[--pulper] uppercase">
                 mobile edition
               </h2>
-              <h1 className="text-[14px] sm:text-[16px] font-[600] text-white">
+              <h1 className="text-[12px] sm:text-[16px] font-[900] text-white">
                 {data.name}
               </h1>
-              <h2 className="text-[12px] sm:text-[14px] font-[500] text-white opacity-60 uppercase">
+              <h2 className="text-[10px] sm:text-[14px] font-[500] text-white opacity-60 uppercase">
                 android & ios
               </h2>
             </div>
@@ -75,7 +75,7 @@ export default function AppDetailsPage({ params }) {
             <Loader />
           ) : (
             <button
-              className="flex mx-auto sm:mx-0 text-[12px] sm:text-[14px] font-[700] text-white uppercase bg-[--pulper] p-[15px] rounded-full w-fit"
+              className="flex mx-auto sm:mx-0 text-[12px] sm:text-[14px] font-[900] text-white uppercase bg-[--pulper] p-[15px] rounded-full w-fit"
               onClick={handleInstallClick}
             >
               install
